@@ -4,6 +4,9 @@ namespace App\Filament\Resources\Movimentos\Pages;
 
 use App\Filament\Resources\Movimentos\MovimentoResource;
 use Filament\Resources\Pages\CreateRecord;
+use App\Models\Produto;
+use App\Models\Movimento;
+use Filament\Notifications\Notificaton;
 
 class CreateMovimento extends CreateRecord
 {

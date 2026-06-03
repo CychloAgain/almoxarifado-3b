@@ -216,7 +216,7 @@
       "type": "rectangle",
       "x": 687.9168126522724,
       "y": 184.84351221715406,
-      "width": 407.66666666666674,
+      "width": 406.66666666666674,
       "height": 205.00000000000003,
       "angle": 0,
       "strokeColor": "#1e1e1e",
@@ -233,11 +233,11 @@
         "type": 3
       },
       "seed": 520895516,
-      "version": 755,
-      "versionNonce": 1262369331,
+      "version": 842,
+      "versionNonce": 1287977687,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1780422146513,
+      "updated": 1780426662666,
       "link": null,
       "locked": false
     },
@@ -263,11 +263,11 @@
         "type": 3
       },
       "seed": 451303580,
-      "version": 1015,
-      "versionNonce": 182734227,
+      "version": 1059,
+      "versionNonce": 680690777,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1780422130560,
+      "updated": 1780426662008,
       "link": null,
       "locked": false
     },
