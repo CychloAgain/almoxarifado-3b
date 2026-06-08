@@ -11,6 +11,17 @@ use Filament\Notifications\Notificaton;
 class CreateMovimento extends CreateRecord
 {
     protected static string $resource = MovimentoResource::class;
+    /**
+     * O que a beforeCreate faz?
+     * Valida se há estoque suficiente antes de salvar a movimentação. Se o tipo for 
+     * uma saída ('s') e a quantidade for maior que o estoque atual, o processo 
+     * é interrompido e uma notificação de erro é exibida.
+     * @param $data recebe os dados do produto
+     * @param $produto recebe uma lista com os dados dos produtos pelo 
+     * @param $quantidade - recebe o valor do campo quantidade do $produto anteriormente selecionado
+     * @param $tipo - recebe o valor do campo do tipo $produto anteriormente selecionado
+     * @return void
+     */
 
     protected function beforeCreate(): void
     {
