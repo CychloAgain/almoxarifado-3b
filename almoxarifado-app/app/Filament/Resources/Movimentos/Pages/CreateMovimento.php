@@ -46,4 +46,16 @@ class CreateMovimento extends CreateRecord
             $this->halt(); // Impede a criação do movimento
         }
     }
+
+    protected function afterCreate(): void
+    {
+        $movimento = $this->getRecord();
+        $produto = $movimento->$produto;
+
+        if ($movimento->tipo === 'e') {
+            $produto->increment('estoque', $movimento->quantidade);
+        } else {
+            $produto->decrement('estoque', $movimento->quantidade);
+        }
+    }
 }
